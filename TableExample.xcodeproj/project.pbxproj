@@ -21,6 +21,7 @@
 		BA2CF8C41939D06F003409D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2CF8A61939D06F003409D1 /* UIKit.framework */; };
 		BA2CF8CC1939D06F003409D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA2CF8CA1939D06F003409D1 /* InfoPlist.strings */; };
 		BA2CF8CE1939D06F003409D1 /* TableExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2CF8CD1939D06F003409D1 /* TableExampleTests.m */; };
+		BA2CF8D81939D461003409D1 /* version.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA2CF8D71939D461003409D1 /* version.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		BA2CF8C91939D06F003409D1 /* TableExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableExampleTests-Info.plist"; sourceTree = "<group>"; };
 		BA2CF8CB1939D06F003409D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BA2CF8CD1939D06F003409D1 /* TableExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableExampleTests.m; sourceTree = "<group>"; };
+		BA2CF8D71939D461003409D1 /* version.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = version.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		BA2CF8A91939D06F003409D1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BA2CF8D71939D461003409D1 /* version.plist */,
 				BA2CF8AA1939D06F003409D1 /* TableExample-Info.plist */,
 				BA2CF8AB1939D06F003409D1 /* InfoPlist.strings */,
 				BA2CF8AE1939D06F003409D1 /* main.m */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA2CF8BB1939D06F003409D1 /* Images.xcassets in Resources */,
+				BA2CF8D81939D461003409D1 /* version.plist in Resources */,
 				BA2CF8AD1939D06F003409D1 /* InfoPlist.strings in Resources */,
 				BA2CF8B61939D06F003409D1 /* Main.storyboard in Resources */,
 			);

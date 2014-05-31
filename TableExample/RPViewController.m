@@ -12,12 +12,37 @@
 
 @end
 
-@implementation RPViewController
+@implementation RPViewController{
+    NSDictionary *details;
+    NSArray *justNames;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return details.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+   
+    //create new cell
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+    
+    //fill cell
+    cell.textLabel.text = justNames[indexPath.row];
+    
+    return cell;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSURL *url = [[NSBundle mainBundle] URLForResource:@"version" withExtension:@"plist"];
+
+    //load the plist into dictionsry
+    details = [NSDictionary dictionaryWithContentsOfURL:url];
+    
+    //create an array with just the keys
+    justNames = details.allKeys;
 }
 
 - (void)didReceiveMemoryWarning
