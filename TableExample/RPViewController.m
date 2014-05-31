@@ -24,7 +24,10 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
    
     //create new cell
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+    //UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+    
+    //Using reusable cells... Very efficient if we have too many (100 or more) rows
+    UITableViewCell *cell  = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
     //fill cell
     cell.textLabel.text = justNames[indexPath.row];
