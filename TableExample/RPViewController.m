@@ -15,10 +15,23 @@
 @implementation RPViewController{
     NSDictionary *details;
     NSArray *justNames;
+    
+    NSDictionary *moreDetails;
+    NSArray *moreNames;
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 2;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return details.count;
+    
+    if (section == 0) {
+        return details.count;
+    }else{
+        return moreDetails.count;
+    }
+
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -30,7 +43,12 @@
     UITableViewCell *cell  = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
     //fill cell
-    cell.textLabel.text = justNames[indexPath.row];
+    if (indexPath.section == 0) {
+        cell.textLabel.text = justNames[indexPath.row];
+    }else{
+        cell.textLabel.text = moreNames[indexPath.row];
+    }
+
     
     return cell;
 }
@@ -40,12 +58,15 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"version" withExtension:@"plist"];
+    NSURL *url2 = [[NSBundle mainBundle] URLForResource:@"Defaults" withExtension:@"plist"];
 
     //load the plist into dictionsry
     details = [NSDictionary dictionaryWithContentsOfURL:url];
+    moreDetails = [NSDictionary dictionaryWithContentsOfURL:url2];
     
     //create an array with just the keys
     justNames = details.allKeys;
+    moreNames = moreDetails.allKeys;
 }
 
 - (void)didReceiveMemoryWarning
