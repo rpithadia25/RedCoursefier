@@ -53,6 +53,14 @@
     return cell;
 }
 
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    if (section == 0) {
+        return @"details";
+    }else{
+        return  @"more details";
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
