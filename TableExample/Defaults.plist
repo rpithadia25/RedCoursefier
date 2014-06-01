@@ -3,38 +3,38 @@
 <plist version="1.0">
 <dict>
 	<key>AppleFullScreenEnabled</key>
-	<true/>
+	<string>1</string>
 	<key>MBCAlternateVoice</key>
 	<string>com.apple.speech.synthesis.voice.Vicki</string>
 	<key>MBCBoardAngle</key>
-	<integer>60</integer>
+	<string>60</string>
 	<key>MBCBoardSpin</key>
-	<integer>180</integer>
+	<string>180</string>
 	<key>MBCBoardStyle</key>
 	<string>Wood</string>
 	<key>MBCEnableVariations</key>
-	<false/>
+	<string>0</string>
 	<key>MBCFloatingBoard</key>
-	<false/>
+	<string>0</string>
 	<key>MBCListenForMoves</key>
-	<true/>
+	<string>1</string>
 	<key>MBCPieceStyle</key>
 	<string>Wood</string>
 	<key>MBCSearchTime</key>
-	<integer>1</integer>
+	<string>1</string>
 	<key>MBCShowMoveInTitle</key>
-	<false/>
+	<string>0</string>
 	<key>MBCSpeakHumanMoves</key>
-	<false/>
+	<string>0</string>
 	<key>MBCSpeakMoves</key>
-	<true/>
+	<string>1</string>
 	<key>MBCNewGamePlayers</key>
-	<integer>1</integer>
+	<string>1</string>
 	<key>MBCNewGameVariant</key>
-	<integer>0</integer>
+	<string>0</string>
 	<key>MBCNewGameSides</key>
-	<integer>2</integer>
+	<string>2</string>
 	<key>MBCShowGameLog</key>
-	<false/>
+	<string>0</string>
 </dict>
 </plist>

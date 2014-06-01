@@ -45,8 +45,10 @@
     //fill cell
     if (indexPath.section == 0) {
         cell.textLabel.text = justNames[indexPath.row];
+        cell.detailTextLabel.text = details[justNames[indexPath.row]];
     }else{
         cell.textLabel.text = moreNames[indexPath.row];
+        cell.detailTextLabel.text = moreDetails[moreNames[indexPath.row]];
     }
 
     
