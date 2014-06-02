@@ -42,6 +42,12 @@
     //Using reusable cells... Very efficient if we have too many (100 or more) rows
     UITableViewCell *cell  = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
+    
+    //To add cell icons
+    //Retrieve an image
+    UIImage *myImage = [UIImage imageNamed:@"DemoCellImage"];
+    [cell.imageView setImage:myImage];
+    
     //fill cell
     if (indexPath.section == 0) {
         cell.textLabel.text = justNames[indexPath.row];
@@ -54,6 +60,17 @@
     
     return cell;
 }
+
+//Gives out an alert message when any row is selected
+/*
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"My Message" message:[NSString stringWithFormat:@"%d", indexPath.row] delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+    
+    [alert show];
+}
+*/
+
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     if (section == 0) {
