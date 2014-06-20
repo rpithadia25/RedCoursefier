@@ -2,15 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BuildVersion</key>
-	<string>3</string>
-	<key>CFBundleShortVersionString</key>
-	<string>8.0</string>
-	<key>CFBundleVersion</key>
-	<string>4226</string>
-	<key>ProjectName</key>
-	<string>iChat</string>
-	<key>SourceVersion</key>
-	<string>4226000000000000</string>
+	<key>CS560</key>
+	<string>Algorithms and Their Analysis</string>
+	<key>CS535</key>
+	<string>Object Oriented Programming</string>
+	<key>CS520</key>
+	<string>Advanced Programming Languages</string>
 </dict>
 </plist>

@@ -2,39 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AppleFullScreenEnabled</key>
-	<string>1</string>
-	<key>MBCAlternateVoice</key>
-	<string>com.apple.speech.synthesis.voice.Vicki</string>
-	<key>MBCBoardAngle</key>
-	<string>60</string>
-	<key>MBCBoardSpin</key>
-	<string>180</string>
-	<key>MBCBoardStyle</key>
-	<string>Wood</string>
-	<key>MBCEnableVariations</key>
-	<string>0</string>
-	<key>MBCFloatingBoard</key>
-	<string>0</string>
-	<key>MBCListenForMoves</key>
-	<string>1</string>
-	<key>MBCPieceStyle</key>
-	<string>Wood</string>
-	<key>MBCSearchTime</key>
-	<string>1</string>
-	<key>MBCShowMoveInTitle</key>
-	<string>0</string>
-	<key>MBCSpeakHumanMoves</key>
-	<string>0</string>
-	<key>MBCSpeakMoves</key>
-	<string>1</string>
-	<key>MBCNewGamePlayers</key>
-	<string>1</string>
-	<key>MBCNewGameVariant</key>
-	<string>0</string>
-	<key>MBCNewGameSides</key>
-	<string>2</string>
-	<key>MBCShowGameLog</key>
-	<string>0</string>
+	<key>CS600</key>
+	<string>Methods of Bioinformatics</string>
+	<key>CS635</key>
+	<string>Advanced Object Oriented Programming</string>
+	<key>CS625</key>
+	<string>Spatial Databases</string>
 </dict>
 </plist>
